@@ -21,7 +21,7 @@ public class Sketch extends PApplet {
 
 	  // This is the body of the house
     fill(255, 255, 255);
-    rect(100, 150, 200, 300); 
+    rect(100, 150, 200, 200); 
 
     // This is the roof of the house
     fill(58, 59, 60);
@@ -49,14 +49,14 @@ public class Sketch extends PApplet {
 
     // This is the door on the house
     fill(101, 67, 53);
-    rect(175, 240, 50, 75);
+    rect(175, 275, 50, 75);
 
     fill(1, 2, 3);
-    rect(210, 260, 5, 5);
+    rect(210, 300, 5, 5);
 
     // This is the tree beside the house
     fill(101, 67, 53);
-    rect(325, 150, 50, 150);
+    rect(325, 150, 50, 200);
   
     noStroke();
     fill(10, 101, 34);
