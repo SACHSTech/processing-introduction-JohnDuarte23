@@ -1,0 +1,78 @@
+import processing.core.PApplet;
+
+public class Sketch extends PApplet {
+	
+	
+  // Size of image
+  public void settings() {
+    size(600, 600);
+  }
+
+  // Background colour
+  public void setup() {
+    background(135, 206, 235);
+  }
+
+  public void draw() {
+	
+    // Background grass
+    fill(10, 101, 24);
+    rect(width * 0f, height * 0.875f, width * 1f, height * .125f);
+
+	  // This is the body of the house
+    fill(255, 255, 255);
+    rect(width * 0.25f, height * 0.375f, width * 0.5f, height * 0.5f); 
+
+    // This is the roof of the house
+    fill(58, 59, 60);
+    triangle(width * 0.5f, height * 0.125f, width * 0.25f, height * 0.375f, width * 0.75f, height * 0.375f);
+
+    // These are the windows on the house
+    fill(120, 246, 252);
+    rect(width * 0.3125f, height * 0.4375f, width * 0.125f, height * 0.125f);
+
+    fill(121, 246, 252);
+    rect(width * 0.5625f, height * 0.4375f, width * 0.125f, height * 0.125f);
+    
+    // These are the lines of the windows on the house
+    stroke(0);
+    line(width * 0.375f, height * 0.4375f, width * 0.375f, height * 0.5625f);
+    
+    stroke(0);
+    line(width * 0.625f, height * 0.4375f, width * 0.625f, height * 0.5625f);
+
+    stroke(0);
+    line(width * 0.3125f, height * 0.5f, width * 0.4375f, height * 0.5f);
+
+    stroke(0);
+    line(width * 0.5625f, height * 0.5f, width * 0.6875f, height * 0.5f);
+
+    // This is the door on the house
+    fill(101, 67, 53);
+    rect(width * 0.4375f, height * 0.6875f, width * 0.125f, height * 0.1875f);
+
+    fill(1, 2, 3);
+    rect(width * 0.525f, height * 0.75f, width * 0.0125f, height * 0.0125f);
+
+    // This is the tree beside the house
+    fill(101, 67, 53);
+    rect(width * 0.8125f, height * 0.375f, width * 0.125f, height * 0.5f);
+  
+    noStroke();
+    fill(10, 101, 34);
+    ellipse(width * 0.875f, height * 0.4f, width * 0.1875f, height * 0.125f);
+
+    fill(10, 101, 34);
+    ellipse(width * 0.875f, height * 0.3125f, width * 0.1875f, height * 0.125f);
+
+    fill(10, 101, 34);
+    ellipse(width * 0.9375f, height * 0.375f, width * 0.1875f, height * 0.125f);
+
+    fill(10, 101, 34);
+    ellipse(width * 0.8125f, height * 0.375f, width * 0.1875f, height * 0.125f);
+
+    // This is the sun
+    fill(225, 225, 0);
+    ellipse(width * 0.125f, height * 0.125f, width * 0.125f, height * 0.125f);
+  }
+}
